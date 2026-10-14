@@ -1,0 +1,542 @@
+{
+  "dataset_status": "synthetic",
+  "is_synthetic": true,
+  "dataset_sha256": "4b6e0a08d400a4b113344e5ed56036688d0576abcf3462fab486558ea339c153",
+  "sample_count": 303,
+  "validation_methodology": "Stratified 5-fold CV; imputation, scaling, and encoding fitted within each training fold",
+  "selection_methodology": "Candidate with highest pooled out-of-fold F1 selected independently per target; resulting metrics are selection-set estimates and may be optimistic",
+  "excluded_leakage_columns": [
+    "CAD",
+    "Cath",
+    "LAD",
+    "LCX",
+    "RCA"
+  ],
+  "targets": {
+    "CAD": {
+      "selected_model": "RandomForest",
+      "metrics": {
+        "accuracy": 0.7491749174917491,
+        "precision": 0.75,
+        "recall": 0.9722222222222222,
+        "f1": 0.8467741935483871,
+        "roc_auc": 0.7812366964665814,
+        "brier_score": 0.16741944861743704,
+        "support": 303,
+        "confusion_matrix": [
+          [
+            17,
+            70
+          ],
+          [
+            6,
+            210
+          ]
+        ]
+      },
+      "all_models": {
+        "RandomForest": {
+          "accuracy": 0.7491749174917491,
+          "precision": 0.75,
+          "recall": 0.9722222222222222,
+          "f1": 0.8467741935483871,
+          "roc_auc": 0.7812366964665814,
+          "brier_score": 0.16741944861743704,
+          "support": 303,
+          "confusion_matrix": [
+            [
+              17,
+              70
+            ],
+            [
+              6,
+              210
+            ]
+          ]
+        },
+        "GradientBoosting": {
+          "accuracy": 0.759075907590759,
+          "precision": 0.8095238095238095,
+          "recall": 0.8657407407407407,
+          "f1": 0.8366890380313199,
+          "roc_auc": 0.7502128565346956,
+          "brier_score": 0.17972051688269045,
+          "support": 303,
+          "confusion_matrix": [
+            [
+              43,
+              44
+            ],
+            [
+              29,
+              187
+            ]
+          ]
+        },
+        "LogisticRegression": {
+          "accuracy": 0.7755775577557755,
+          "precision": 0.8303571428571429,
+          "recall": 0.8611111111111112,
+          "f1": 0.8454545454545455,
+          "roc_auc": 0.7794806300553426,
+          "brier_score": 0.1690586981023708,
+          "support": 303,
+          "confusion_matrix": [
+            [
+              49,
+              38
+            ],
+            [
+              30,
+              186
+            ]
+          ]
+        }
+      }
+    },
+    "LAD": {
+      "selected_model": "LogisticRegression",
+      "metrics": {
+        "accuracy": 0.7623762376237624,
+        "precision": 0.7764705882352941,
+        "recall": 0.7951807228915663,
+        "f1": 0.7857142857142857,
+        "roc_auc": 0.8583677776800633,
+        "brier_score": 0.16245584202890884,
+        "support": 303,
+        "confusion_matrix": [
+          [
+            99,
+            38
+          ],
+          [
+            34,
+            132
+          ]
+        ]
+      },
+      "all_models": {
+        "RandomForest": {
+          "accuracy": 0.7260726072607261,
+          "precision": 0.726775956284153,
+          "recall": 0.8012048192771084,
+          "f1": 0.7621776504297995,
+          "roc_auc": 0.8289068683493097,
+          "brier_score": 0.1847067833840728,
+          "support": 303,
+          "confusion_matrix": [
+            [
+              87,
+              50
+            ],
+            [
+              33,
+              133
+            ]
+          ]
+        },
+        "GradientBoosting": {
+          "accuracy": 0.7293729372937293,
+          "precision": 0.7386363636363636,
+          "recall": 0.7831325301204819,
+          "f1": 0.7602339181286549,
+          "roc_auc": 0.8190572509014159,
+          "brier_score": 0.17829569677083107,
+          "support": 303,
+          "confusion_matrix": [
+            [
+              91,
+              46
+            ],
+            [
+              36,
+              130
+            ]
+          ]
+        },
+        "LogisticRegression": {
+          "accuracy": 0.7623762376237624,
+          "precision": 0.7764705882352941,
+          "recall": 0.7951807228915663,
+          "f1": 0.7857142857142857,
+          "roc_auc": 0.8583677776800633,
+          "brier_score": 0.16245584202890884,
+          "support": 303,
+          "confusion_matrix": [
+            [
+              99,
+              38
+            ],
+            [
+              34,
+              132
+            ]
+          ]
+        }
+      }
+    },
+    "LCX": {
+      "selected_model": "LogisticRegression",
+      "metrics": {
+        "accuracy": 0.7458745874587459,
+        "precision": 0.6458333333333334,
+        "recall": 0.5904761904761905,
+        "f1": 0.6169154228855721,
+        "roc_auc": 0.8088985088985089,
+        "brier_score": 0.17442835802607598,
+        "support": 303,
+        "confusion_matrix": [
+          [
+            164,
+            34
+          ],
+          [
+            43,
+            62
+          ]
+        ]
+      },
+      "all_models": {
+        "RandomForest": {
+          "accuracy": 0.7227722772277227,
+          "precision": 0.7692307692307693,
+          "recall": 0.2857142857142857,
+          "f1": 0.4166666666666667,
+          "roc_auc": 0.7612313612313613,
+          "brier_score": 0.18959543218667402,
+          "support": 303,
+          "confusion_matrix": [
+            [
+              189,
+              9
+            ],
+            [
+              75,
+              30
+            ]
+          ]
+        },
+        "GradientBoosting": {
+          "accuracy": 0.693069306930693,
+          "precision": 0.5666666666666667,
+          "recall": 0.4857142857142857,
+          "f1": 0.5230769230769231,
+          "roc_auc": 0.7804232804232805,
+          "brier_score": 0.18880951929037432,
+          "support": 303,
+          "confusion_matrix": [
+            [
+              159,
+              39
+            ],
+            [
+              54,
+              51
+            ]
+          ]
+        },
+        "LogisticRegression": {
+          "accuracy": 0.7458745874587459,
+          "precision": 0.6458333333333334,
+          "recall": 0.5904761904761905,
+          "f1": 0.6169154228855721,
+          "roc_auc": 0.8088985088985089,
+          "brier_score": 0.17442835802607598,
+          "support": 303,
+          "confusion_matrix": [
+            [
+              164,
+              34
+            ],
+            [
+              43,
+              62
+            ]
+          ]
+        }
+      }
+    },
+    "RCA": {
+      "selected_model": "LogisticRegression",
+      "metrics": {
+        "accuracy": 0.7194719471947195,
+        "precision": 0.6470588235294118,
+        "recall": 0.5739130434782609,
+        "f1": 0.6082949308755761,
+        "roc_auc": 0.7762257169287697,
+        "brier_score": 0.19311755488684798,
+        "support": 303,
+        "confusion_matrix": [
+          [
+            152,
+            36
+          ],
+          [
+            49,
+            66
+          ]
+        ]
+      },
+      "all_models": {
+        "RandomForest": {
+          "accuracy": 0.7062706270627063,
+          "precision": 0.8421052631578947,
+          "recall": 0.2782608695652174,
+          "f1": 0.41830065359477125,
+          "roc_auc": 0.7465309898242368,
+          "brier_score": 0.20106201221970896,
+          "support": 303,
+          "confusion_matrix": [
+            [
+              182,
+              6
+            ],
+            [
+              83,
+              32
+            ]
+          ]
+        },
+        "GradientBoosting": {
+          "accuracy": 0.7095709570957096,
+          "precision": 0.6391752577319587,
+          "recall": 0.5391304347826087,
+          "f1": 0.5849056603773585,
+          "roc_auc": 0.7356151711378354,
+          "brier_score": 0.20294513448684992,
+          "support": 303,
+          "confusion_matrix": [
+            [
+              153,
+              35
+            ],
+            [
+              53,
+              62
+            ]
+          ]
+        },
+        "LogisticRegression": {
+          "accuracy": 0.7194719471947195,
+          "precision": 0.6470588235294118,
+          "recall": 0.5739130434782609,
+          "f1": 0.6082949308755761,
+          "roc_auc": 0.7762257169287697,
+          "brier_score": 0.19311755488684798,
+          "support": 303,
+          "confusion_matrix": [
+            [
+              152,
+              36
+            ],
+            [
+              49,
+              66
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "target_metrics": {
+    "CAD": {
+      "model": "RandomForest",
+      "accuracy": 0.7491749174917491,
+      "precision": 0.75,
+      "recall": 0.9722222222222222,
+      "f1": 0.8467741935483871,
+      "roc_auc": 0.7812366964665814,
+      "brier_score": 0.16741944861743704,
+      "support": 303,
+      "confusion_matrix": [
+        [
+          17,
+          70
+        ],
+        [
+          6,
+          210
+        ]
+      ],
+      "class_prevalence": 0.7128712871287128,
+      "positive_support": 216,
+      "negative_support": 87
+    },
+    "LAD": {
+      "model": "LogisticRegression",
+      "accuracy": 0.7623762376237624,
+      "precision": 0.7764705882352941,
+      "recall": 0.7951807228915663,
+      "f1": 0.7857142857142857,
+      "roc_auc": 0.8583677776800633,
+      "brier_score": 0.16245584202890884,
+      "support": 303,
+      "confusion_matrix": [
+        [
+          99,
+          38
+        ],
+        [
+          34,
+          132
+        ]
+      ],
+      "class_prevalence": 0.5478547854785478,
+      "positive_support": 166,
+      "negative_support": 137
+    },
+    "LCX": {
+      "model": "LogisticRegression",
+      "accuracy": 0.7458745874587459,
+      "precision": 0.6458333333333334,
+      "recall": 0.5904761904761905,
+      "f1": 0.6169154228855721,
+      "roc_auc": 0.8088985088985089,
+      "brier_score": 0.17442835802607598,
+      "support": 303,
+      "confusion_matrix": [
+        [
+          164,
+          34
+        ],
+        [
+          43,
+          62
+        ]
+      ],
+      "class_prevalence": 0.3465346534653465,
+      "positive_support": 105,
+      "negative_support": 198
+    },
+    "RCA": {
+      "model": "LogisticRegression",
+      "accuracy": 0.7194719471947195,
+      "precision": 0.6470588235294118,
+      "recall": 0.5739130434782609,
+      "f1": 0.6082949308755761,
+      "roc_auc": 0.7762257169287697,
+      "brier_score": 0.19311755488684798,
+      "support": 303,
+      "confusion_matrix": [
+        [
+          152,
+          36
+        ],
+        [
+          49,
+          66
+        ]
+      ],
+      "class_prevalence": 0.3795379537953795,
+      "positive_support": 115,
+      "negative_support": 188
+    }
+  },
+  "data_quality": {
+    "duplicate_rows": 0,
+    "missing_cells": 0
+  },
+  "target_distributions": {
+    "CAD": {
+      "positive": 216,
+      "negative": 87,
+      "positive_fraction": 0.7128712871287128
+    },
+    "LAD": {
+      "positive": 166,
+      "negative": 137,
+      "positive_fraction": 0.5478547854785478
+    },
+    "LCX": {
+      "positive": 105,
+      "negative": 198,
+      "positive_fraction": 0.3465346534653465
+    },
+    "RCA": {
+      "positive": 115,
+      "negative": 188,
+      "positive_fraction": 0.3795379537953795
+    }
+  },
+  "feature_count": 78,
+  "feature_names": [
+    "Age",
+    "Weight",
+    "Length",
+    "BMI",
+    "BP",
+    "PR",
+    "FBS",
+    "CR",
+    "TG",
+    "LDL",
+    "HDL",
+    "BUN",
+    "ESR",
+    "HB",
+    "K",
+    "Na",
+    "WBC",
+    "Lymph",
+    "Neut",
+    "PLT",
+    "EF-TTE",
+    "Region RWMA",
+    "Sex_Female",
+    "Sex_Male",
+    "DM_N",
+    "DM_Y",
+    "HTN_N",
+    "HTN_Y",
+    "Current Smoker_N",
+    "Current Smoker_Y",
+    "EX-Smoker_N",
+    "EX-Smoker_Y",
+    "FH_N",
+    "FH_Y",
+    "Obesity_N",
+    "Obesity_Y",
+    "CRBP_N",
+    "CRBP_Y",
+    "Weak Peripheral Pulse_N",
+    "Weak Peripheral Pulse_Y",
+    "Cough_N",
+    "Cough_Y",
+    "Dyspnea_N",
+    "Dyspnea_Y",
+    "Typical Chest Pain_N",
+    "Typical Chest Pain_Y",
+    "Atypical_N",
+    "Atypical_Y",
+    "Nonanginal_N",
+    "Nonanginal_Y",
+    "Exertional CP_N",
+    "Exertional CP_Y",
+    "LowTH Ang_N",
+    "LowTH Ang_Y",
+    "Edema_0",
+    "Edema_1",
+    "Murmur_N",
+    "Murmur_Y",
+    "Systolic Murmur_N",
+    "Systolic Murmur_Y",
+    "Diastolic Murmur_N",
+    "Diastolic Murmur_Y",
+    "VHD_Mild",
+    "VHD_Moderate",
+    "VHD_None",
+    "VHD_Severe",
+    "Q Wave_0",
+    "Q Wave_1",
+    "St Elevation_0",
+    "St Elevation_1",
+    "St Depression_0",
+    "St Depression_1",
+    "Tinversion_0",
+    "Tinversion_1",
+    "LVH_0",
+    "LVH_1",
+    "Poor R Progression_0",
+    "Poor R Progression_1"
+  ]
+}

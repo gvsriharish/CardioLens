@@ -1,0 +1,40 @@
+{
+  "dataset_name": "z_alizadeh_sani_dataset.csv",
+  "source": "Bundled workspace CSV; no external source record or license supplied",
+  "provenance_status": "synthetic",
+  "provenance_evidence": "Every row matches generate_synthetic_records(n_samples=303, random_state=42).",
+  "retrieval_date": null,
+  "record_count": 303,
+  "column_count": 54,
+  "sha256": "4b6e0a08d400a4b113344e5ed56036688d0576abcf3462fab486558ea339c153",
+  "targets": {
+    "CAD": {
+      "positive": 216,
+      "negative": 87,
+      "encoding": "Synthetic generator binary status; not a clinically verified threshold"
+    },
+    "LAD": {
+      "positive": 166,
+      "negative": 137,
+      "encoding": "Synthetic generator binary status; not a clinically verified threshold"
+    },
+    "LCX": {
+      "positive": 105,
+      "negative": 198,
+      "encoding": "Synthetic generator binary status; not a clinically verified threshold"
+    },
+    "RCA": {
+      "positive": 115,
+      "negative": 188,
+      "encoding": "Synthetic generator binary status; not a clinically verified threshold"
+    }
+  },
+  "target_generation_note": "Synthetic labels are generated from seeded latent scores and quantiles in ml/dataset_generator.py; they are not measurements or clinical diagnoses.",
+  "preprocessing": "Outcome columns CAD, Cath, LAD, LCX, and RCA excluded from inputs. Numerical median imputation and scaling plus categorical mode imputation and one-hot encoding are fitted within each training fold.",
+  "known_limitations": [
+    "No authentic clinical dataset used",
+    "No external or held-out test cohort",
+    "No calibrated probabilities",
+    "No duplicate, missing, or invalid-row clinical adjudication"
+  ]
+}

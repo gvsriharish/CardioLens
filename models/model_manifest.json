@@ -1,0 +1,22 @@
+{
+  "artifact_version": "demo-4b6e0a08d400",
+  "dataset_sha256": "4b6e0a08d400a4b113344e5ed56036688d0576abcf3462fab486558ea339c153",
+  "training_config": {
+    "random_state": 42,
+    "cv": "StratifiedKFold, up to 5 folds",
+    "model_selection": "highest pooled out-of-fold F1",
+    "candidate_models": [
+      "RandomForest",
+      "GradientBoosting",
+      "LogisticRegression"
+    ]
+  },
+  "artifacts": {
+    "preprocessor.joblib": "fb4896e8f97a821137cf9749a40a17873bf5bd0448782e18e1e82a9d473f3883",
+    "cad_model.joblib": "19bca547076877b1c7b1c09617d26805f3166aa9c05b69ab8fd2286ff71c0969",
+    "lad_model.joblib": "d7a07d6f41bce30e535b2520c3da8fa28e5d18bd18e9df1e546d81618f570dac",
+    "lcx_model.joblib": "f6edb6d90d7f2727a5c708891e9bff11b874ad6aeab64ef6765d880384fd0324",
+    "rca_model.joblib": "1f2b86dddb5ff1e0fad833aec58a539e0a385e3fdfedbffa9fdf3b5727387cfe",
+    "metrics.json": "238cf9f27b7b2a06d421716bf8897c1ac23b94564de6d6828e3a98ce6ea3c3aa"
+  }
+}
