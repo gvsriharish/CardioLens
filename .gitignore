@@ -8,14 +8,29 @@ __pycache__/
 htmlcov/
 
 # Node build dependencies
-frontend/node_modules/
+node_modules/
+dist/
 
 # Local secrets and runtime configuration
 .env
 .env.*
+.env.local
 !.env.example
+*.pem
+*.key
+*.cert
+
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Regenerable audit and temporary files
 tmp/
-.codex-test-deps/
-.codex-test-venv/
